@@ -1,0 +1,28 @@
+PATH
+  remote: .
+  specs:
+    jruby-jar-example (1.0.0)
+      rake (~> 13.0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    jruby-jars (9.2.19.0)
+    jruby-rack (1.1.21)
+    rake (13.0.3)
+    rubyzip (1.3.0)
+    warbler (2.0.5)
+      jruby-jars (>= 9.0.0.0)
+      jruby-rack (>= 1.1.1, < 1.3)
+      rake (>= 10.1.0)
+      rubyzip (~> 1.0, < 1.4)
+
+PLATFORMS
+  universal-java-1.8
+
+DEPENDENCIES
+  jruby-jar-example!
+  warbler
+
+BUNDLED WITH
+   2.2.21

@@ -1,0 +1,15 @@
+version: '3.1'
+volumes:
+  app-gems:
+    driver: local
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - HISTORY_FILE=/app/.irb_history
+      - LANG=C.UTF-8
+    volumes:
+      - .:/app:delegated
+      - app-gems:/usr/local/bundle
